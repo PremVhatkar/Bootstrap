@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap Collapse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body style="margin-bottom: 300px;">
+    <div class="container">
+        <h1>Collapse</h1>
+        <!-- <button class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#demo">Hide & Show</button> -->
+        <a href="#demo" class="btn btn-success" data-bs-toggle="collapse">Hide & Show</a>
+
+        <div class="collapse" id="demo">
+            <h4>Button Content</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quibusdam illum odit, est maiores deserunt magnam deleniti consequuntur nemo eligendi voluptate ullam tempore ab eveniet. Eum hic error obcaecati quo perspiciatis cum sapiente autem sed cumque eius dolores quis eligendi cupiditate quos, ipsa rem? Quas a molestias ut quisquam magnam!</p>
+        </div>
+
+        <hr>
+        <h1>Accordion</h1>
+            <div id="mainparent">
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#one" class="btn" data-bs-toggle="collapse">Lorem ipsum dolor sit amet. Question 1?</a>
+                    </div>
+                    <div class="collapse show" id="one" data-bs-parent="#mainparent">
+                        <div class="card-body">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid eligendi possimus repellat quos, voluptate, est reprehenderit quidem officia excepturi animi eveniet, harum beatae quibusdam. Quis a dignissimos necessitatibus magnam voluptas?
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#two" class="btn" data-bs-toggle="collapse">Lorem ipsum dolor sit amet. Question 2?</a>
+                    </div>
+                    <div class="collapse" id="two" data-bs-parent="#mainparent">
+                        <div class="card-body">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid eligendi possimus repellat quos, voluptate, est reprehenderit quidem officia excepturi animi eveniet, harum beatae quibusdam. Quis a dignissimos necessitatibus magnam voluptas?
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#three" class="btn" data-bs-toggle="collapse">Lorem ipsum dolor sit amet. Question 3?</a>
+                    </div>
+                    <div class="collapse" id="three" data-bs-parent="#mainparent">
+                        <div class="card-body">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid eligendi possimus repellat quos, voluptate, est reprehenderit quidem officia excepturi animi eveniet, harum beatae quibusdam. Quis a dignissimos necessitatibus magnam voluptas?
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#four" class="btn" data-bs-toggle="collapse">Lorem ipsum dolor sit amet. Question 4?</a>
+                    </div>
+                    <div class="collapse" id="four" data-bs-parent="#mainparent">
+                        <div class="card-body">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid eligendi possimus repellat quos, voluptate, est reprehenderit quidem officia excepturi animi eveniet, harum beatae quibusdam. Quis a dignissimos necessitatibus magnam voluptas?
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

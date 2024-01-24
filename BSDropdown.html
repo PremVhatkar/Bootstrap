@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap Dropdown</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        .dropbtn{
+            background-color: yellowgreen;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .dropdown1{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            position: absolute;
+            z-index: 1;
+            background-color: tan;
+            min-width: 150px;
+            box-shadow: 0px 4px 5px rgba(0,0,0,0.2);
+            display: none;
+        }
+        .dropdown-content li{
+            list-style-type: none;
+            
+        }
+        .dropdown-content a{
+            color: black;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover{
+            background-color: white;
+        }
+        .dropdown1:hover .dropdown-content{
+            display: block;
+        }
+
+        .dropdown2{
+            position: relative;
+          
+        }
+        .dropdown-content2{
+            position: absolute;
+            z-index: 1;
+            background-color: aqua;
+            top: 0;
+            left: 120px;
+            min-width: 100px;
+            box-shadow: 0px 4px 5px rgba(0,0,0,0.2);
+            display: none;
+        }
+        .dropdown2:hover .dropdown-content2{
+            display: block;
+        }
+    </style>
+</head>
+<body style="margin-bottom: 300px;">
+    <div class="container">
+        <h1>Basic Dropdown</h1>
+        <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+            <div class="dropdown-menu">
+                <a href="" class="dropdown-item">Menu 1</a>
+                <a href="" class="dropdown-item">Menu 2</a>
+                <a href="" class="dropdown-item">Menu 3</a>
+                <a href="" class="dropdown-item">Menu 4</a>
+            </div>
+        </div><br><hr>
+
+
+        <h1>Dropdown Divider</h1>
+        <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+            <ul class="dropdown-menu">
+                <li><a href="" class="dropdown-item">Menu 1</a></li>
+                <li><a href="" class="dropdown-item">Menu 2</a></li>
+                <li><a href="" class="dropdown-item">Menu 3</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a href="" class="dropdown-item">Demo 1</a></li>
+                <li><a href="" class="dropdown-item">Demo 2</a></li>
+                <li><a href="" class="dropdown-item">Demo 3</a></li>
+
+            </ul>
+        </div><br><hr>
+
+        
+        <h1>Dropdown Heder</h1>
+        <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+            <ul class="dropdown-menu">
+                <li><h1 class="dropdown-header">Products</h1></li>
+                <li><a href="" class="dropdown-item active">Menu 1</a></li>
+                <li><a href="" class="dropdown-item">Menu 2</a></li>
+                <li><a href="" class="dropdown-item">Menu 3</a></li>
+                <li><h4 class="dropdown-header">Services</h4></li>
+                <li><a href="" class="dropdown-item disabled">Demo 1</a></li>
+                <li><a href="" class="dropdown-item">Demo 2</a></li>
+                <li><a href="" class="dropdown-item">Demo 3</a></li>
+
+            </ul>
+        </div><br><hr>
+
+
+        <h1>Dropdown Menu Right</h1>
+        <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">DropdownDropdownDropdownDropdownDropdownDropdown</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><h1 class="dropdown-header">Products</h1></li>
+                <li><a href="" class="dropdown-item active">Menu 1</a></li>
+                <li><a href="" class="dropdown-item">Menu 2</a></li>
+                <li><a href="" class="dropdown-item">Menu 3</a></li>
+                <li><h4 class="dropdown-header">Services</h4></li>
+                <li><a href="" class="dropdown-item disabled">Demo 1</a></li>
+                <li><a href="" class="dropdown-item">Demo 2</a></li>
+                <li><a href="" class="dropdown-item">Demo 3</a></li>
+                <li><span class="dropdown-item-text">Lorem, ipsum.</span></li>
+
+            </ul>
+        </div><br><hr>
+
+        
+        <h1>Button Groups Dropdown</h1>
+        <div class="btn-group">
+            <button class="btn btn-primary">Vivo</button>
+            <button class="btn btn-primary">Sony</button>
+            <button class="btn btn-primary">Samsung</button>
+            <div class="btn-group">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Apple</button>
+                <div class="dropdown-menu">
+                    <a href="" class="dropdown-item">iPhone</a>
+                    <a href="" class="dropdown-item">MacBook</a>
+                </div>
+            </div>
+           
+        </div><br><hr>
+
+        
+        <h1>Button Groups Dropdown</h1>
+        <div class="btn-group-vertical">
+            <button class="btn btn-primary">Vivo</button>
+            <button class="btn btn-primary">Sony</button>
+            <button class="btn btn-primary">Samsung</button>
+            <div class="btn-group dropend">
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Apple</button>
+                <div class="dropdown-menu">
+                    <a href="" class="dropdown-item">iPhone</a>
+                    <a href="" class="dropdown-item">MacBook</a>
+                </div>
+            </div>
+           
+        </div><br><hr>
+
+        
+        <h1>Simple Nested Dropdown using CSS only </h1>
+
+        <div class="dropdown1">
+            <button class="dropbtn">Dropdown Here</button>
+            <ul class="dropdown-content">
+                <li><a href="">Menu 1</a></li>
+                <li class="dropdown2">
+                    <a href="">Menu 2</a>
+                    <div class="dropdown-content2">
+                        <a href="">sub menu 1</a>
+                        <a href="">sub menu2</a>
+                    </div>
+                </li>
+                <li><a href="">Menu 3</a></li>
+                <li><a href="">Menu 4</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
